@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: taxi_source
+
+    database: spry-guru-479917-v5
+
+    schema: dm2_taxi_project
+
+    tables:
+      - name: raw_taxi_trips
+
+      - name: raw_locations

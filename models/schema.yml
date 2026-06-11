@@ -4,31 +4,21 @@ models:
   - name: stg_taxi_trips
     description: Cleaned taxi trip data
 
-    columns:
-      - name: VendorID
-        tests:
-          - not_null
-
-      - name: trip_distance
-        tests:
-          - not_null
-
-      - name: total_amount
-        tests:
-          - not_null
-
   - name: taxi_analytics
     description: Taxi trips with calculated metrics
 
     columns:
       - name: VendorID
+        description: Taxi vendor identifier
         tests:
           - not_null
 
       - name: trip_distance
+        description: Distance travelled by taxi
         tests:
           - not_null
 
       - name: total_amount
+        description: Total amount charged for trip
         tests:
           - not_null
